@@ -6,6 +6,7 @@ export default ({ req }) => {
 
     return axios.create({
       baseURL: 'http://ingress-nginx.ingress-nginx.svc.cluster.local',
+      // baseURL: 'smth real domain name'
       headers: req.headers
     });
   } else {
